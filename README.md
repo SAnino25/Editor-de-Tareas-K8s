@@ -20,7 +20,7 @@ las imágenes construidas con `imagesEnRegistry.sh`.
 ## 🚀 Levantar todo (cluster + imágenes + app)
 
 ```bash
-chmod +x createCluster.sh imagesEnRegistry.sh start.sh
+chmod +x  start.sh
 
 ./start.sh
 ```
