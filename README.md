@@ -24,6 +24,16 @@ chmod +x  start.sh
 
 ./start.sh
 ```
+
+### ⏱️ Tiempo de arranque estimado
+
+| Situación | Tiempo aproximado |
+|---|---|
+| Primera vez (descarga imágenes + build) | 2–4 minutos |
+| Arranques posteriores (imágenes en caché) | 20–40 segundos |
+
+---
+
 ## Acceso a la app
 
 - Frontend → http://localhost:5173
