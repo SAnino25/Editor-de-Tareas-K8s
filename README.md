@@ -60,23 +60,16 @@ las imágenes construidas en el bloque 2.
 ## 🔍 Comandos útiles
 
 ```bash
-# Ver todos los pods
-kubectl get pods
+chmod +x  start.sh
 
-# Ver logs del backend
-kubectl logs -l app=backend --tail=50
-
-# Ver logs de la base de datos
-kubectl logs -l app=db --tail=50
-
-# Eliminar el clúster (libera recursos)
-kind delete cluster
+./start.sh
 ```
+## Acceso a la app
 
----
+- Frontend → http://localhost:5173
 
-## 🔐 Nota de seguridad
 
-La contraseña de PostgreSQL (`taskpass`) está en texto plano en `start.sh`.
-Es una vulnerabilidad conocida pendiente de corrección. En producción debería
-gestionarse con un gestor de secretos externo (HashiCorp Vault, AWS Secrets Manager, etc.).
+### Para apagar la app (modo Docker, provisional)
+```bash
+docker compose down -v
+```
